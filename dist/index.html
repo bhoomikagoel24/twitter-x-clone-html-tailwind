@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twitter</title>
+  <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body class="dark bg-black text-white">
+  <div class="flex md:container mx-auto my-4">
+    <!-- First Column -->
+    <div class="first w-16 md:w-[70%]">
+      <!-- Logo -->
+      <div class="logo invert my-4">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 m-auto">
+          <g>
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+            </path>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar flex md:items-end flex-col">
+        <!-- Sidebar Menu -->
+        <ul class="flex flex-col text-2xl space-y-3 m-2 md:px-11 font-bold md:w-full">
+          <li
+            class="flex md:justify-start items-center gap-3 mr-4 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer md:px-5 py-3 hover:rounded-full">
+            <span class="material-symbols-outlined">home</span> <span class="hidden md:block">Home</span>
+          </li>
+          <li
+            class="flex justify-start items-center gap-3  md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+            <span class="material-symbols-outlined">search</span> <span class="hidden md:block">Explore</span>
+          </li>
+          <li
+            class="flex justify-start items-center gap-3 md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+            <span class="material-symbols-outlined">notifications</span> <span class="hidden md:block">Notifications</span>
+          </li>
+          <li
+            class="flex justify-start items-center gap-3  md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+            <span class="material-symbols-outlined">mail</span><span class="hidden md:block">Messages</span> 
+          </li>
+          <li
+            class="flex justify-start items-center gap-3  md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+            <span class="material-symbols-outlined">psychology</span> <span class="hidden md:block">Grok</span>
+          </li>
+          <li
+            class="flex justify-start items-center gap-3  md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+            <span class="material-symbols-outlined">list</span> <span class="hidden md:block">Lists</span>
+          </li>
+          <li
+            class="flex justify-start items-center gap-3  md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+            <span class="material-symbols-outlined">bookmark</span><span class="hidden md:block">Bookmarks</span>
+          </li>
+          <li
+            class="flex justify-start items-center gap-3  md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+            <span class="material-symbols-outlined">group</span> <span class="hidden md:block">Communities</span>
+          </li>
+          <li
+            class="flex justify-start items-center gap-3  md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+            <span class="material-symbols-outlined">workspace_premium</span><span class="hidden md:block"> Premium</span>
+          </li>
+          <li
+            class="flex justify-start items-center gap-3  md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+            <span class="material-symbols-outlined">account_circle</span><span class="hidden md:block"> Profile</span>
+          </li>
+          <li
+            class="flex justify-start items-center gap-3 md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+            <span class="material-symbols-outlined">more_horiz</span> <span class="hidden md:block">More</span>
+          </li>
+        </ul>
+        <div class="button w-full text-center my-4">
+          <button class="bg-[#1d9bf0] font-bold px-20 text-xl rounded-full py-3 text-white">Post</button>
+        </div>
+      </div>
+    </div>
+<!-- md:justify-center -->
+    <!-- Second Column -->
+    <div class="second w-full border-[1px] border-white border-y-black">
+      <!-- Top Tabs Section -->
+      <div class="top flex p-3 relative">
+        <div class="absolute w-16 h-1 rounded-full bg-[#1d9bf0] bottom-0 left-[19%] z-10"></div>
+        <div class="left bg-red-2001 w-1/2 flex justify-center font-bold text-lg">For You</div>
+        <div class="right bg-green-2001 w-1/2 flex justify-center font-bold text-lg">Following</div>
+        <div class="settings mx-2">
+          <span class="material-symbols-outlined">settings</span>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <hr>
+      <div class="h-[1px] w-full bg-gray-700"></div>
+
+      <!-- Post Input Section -->
+      <div class="WhatisHappening flex items-start gap-4 p-4 my-4 border-b border-gray-700">
+        <!-- Profile Image -->
+        <div class="img">
+          <img
+            src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_16x9.jpg?w=1200"
+            alt="User" class="w-12 h-12 object-cover rounded-full" />
+        </div>
+
+        <!-- Input and Reply Info -->
+        <div class="w-full">
+          <!-- Input Field -->
+          <input type="text" placeholder="What's happening?"
+            class="w-full bg-transparent outline-none text-white placeholder-gray-500 text-lg" />
+
+          <!-- Reply Settings -->
+          <div class="text-blue-500 flex items-center gap-2 mt-2 cursor-pointer hover:underline w-fit">
+            <span class="material-symbols-outlined text-base">globe_uk</span>
+            <span class="font-bold">Everyone can reply</span>
+          </div>
+
+          <!-- Divider -->
+          <div class="w-[90%] h-[0.2px] bg-gray-400 my-3"></div>
+
+          <!-- Media Icons -->
+          <div class="blueicons flex gap-2 text-[#1d9bf0]">
+            <span class="material-symbols-outlined cursor-pointer">imagesmode</span>
+            <span class="material-symbols-outlined cursor-pointer">gif_box</span>
+            <span class="material-symbols-outlined cursor-pointer">ballot</span>
+            <span class="material-symbols-outlined cursor-pointer">sentiment_satisfied</span>
+            <span class="material-symbols-outlined cursor-pointer">calendar_month</span>
+            <span class="material-symbols-outlined cursor-pointer">pin_drop</span>
+          </div>
+
+          <!-- (Optional) Tweet Button can go here -->
+          <!-- <button class="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 float-right">Tweet</button> -->
+
+        </div>
+        <hr>
+
+      </div>
+      <!-- <hr> -->
+      <div class="posts">
+        <div class="post1">
+          <div class="flex">
+            <div class="imag m-4">
+              <img
+                src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_16x9.jpg?w=1200"
+                alt="User" class="w-12 h-12 object-cover rounded-full" />
+            </div>
+            <div class="content w-[87%] my-3">
+              <span class="font-bold hover:underline cursor-pointer text-white">non aesthetic things </span><span
+                class="text-gray-500">@PicturesFolder .6h</span>
+              <div>legend</div>
+
+              <div class="posting m-0 ml-0 mt-2 mr-4">
+                <div class="w-full max-w-[500px]">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GQuewxLfMh2olMxwVIVsJmu1qFf5Q4dwZw&s"
+                    alt="AI" class="w-full rounded-xl object-cover" />
+                </div>
+              </div>
+              <div class="icons flex justify-between text-gray-600 bg-red-4001 mx-3 ">
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">chat_bubble</span>1k
+
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">repeat</span>4.4k
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">favorite</span>83k
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">bar_chart</span>5.3k
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">bookmark</span>
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">arrow_downward</span>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+       <hr class="border-t border-gray-300" />
+
+        <div class="post2">
+          <div class="flex">
+            <div class="imag m-4">
+              <img
+                src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_16x9.jpg?w=1200"
+                alt="User" class="w-12 h-12 object-cover rounded-full" />
+            </div>
+            <div class="content w-[87%] my-3">
+              <span class="font-bold hover:underline cursor-pointer text-white">non aesthetic things </span><span
+                class="text-gray-500">@PicturesFolder .6h</span>
+              <div>legend</div>
+
+              <div class="posting m-0 ml-0 mt-2 mr-4">
+                <div class="w-full max-w-[500px]">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GQuewxLfMh2olMxwVIVsJmu1qFf5Q4dwZw&s"
+                    alt="AI" class="w-full rounded-xl object-cover" />
+                </div>
+              </div>
+              <div class="icons flex justify-between bg-red-4001 mx-3 text-gray-600">
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">chat_bubble</span>1k
+
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">repeat</span>4.4k
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">favorite</span>83k
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">bar_chart</span>5.3k
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">bookmark</span>
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">arrow_downward</span>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+        <hr>
+        <div class="post3">
+          <div class="flex">
+            <div class="imag m-4">
+              <img
+                src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_16x9.jpg?w=1200"
+                alt="User" class="w-12 h-12 object-cover rounded-full" />
+            </div>
+            <div class="content w-[87%] my-3">
+              <span class="font-bold hover:underline cursor-pointer text-white">non aesthetic things </span><span
+                class="text-gray-500">@PicturesFolder .6h</span>
+              <div>legend</div>
+
+              <div class="posting m-0 ml-0 mt-2 mr-4">
+                <div class="w-full max-w-[500px]">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GQuewxLfMh2olMxwVIVsJmu1qFf5Q4dwZw&s"
+                    alt="AI" class="w-full rounded-xl object-cover" />
+                </div>
+              </div>
+              <div class="icons flex justify-between bg-red-4001 mx-3 text-gray-600">
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">chat_bubble</span>1k
+
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">repeat</span>4.4k
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">favorite</span>83k
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">bar_chart</span>5.3k
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">bookmark</span>
+                </div>
+                <div class="icons flex items-center justify-center">
+                  <span class="material-symbols-outlined">arrow_downward</span>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+
+    <!-- Third Column -->
+    <div class="third w-full bg-red-5044 hidden md:block">
+      <div class="search m-3">
+        <input type="text" class="w-1/2 rounded-full bg-[#16181c] text-white px-4 py-2" placeholder="Search">
+      </div>
+
+      <div class="whats m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-3">
+
+        <h1 class="text-xl font-bold px-3">Whats Happening</h1>
+        <div class="item my-3 p-3 hover:bg-gray-800 cursor-pointer">
+          <div class="text-sm text-gray-200">Trending in India</div>
+          <div class="font-bold">#Orry</div>
+          <div class="text-sm text-gray-200">40.2k Posts</div>
+        </div>
+        <div class="item my-3 p-3 hover:bg-gray-800 cursor-pointer">
+          <div class="text-sm text-gray-200">Trending in India</div>
+          <div class="font-bold">#AgenticAI</div>
+          <div class="text-sm text-gray-200">4.2k Posts</div>
+        </div>
+        <div class="item my-3 p-3 hover:bg-gray-800 cursor-pointer">
+          <div class="text-sm text-gray-200">Trending in India</div>
+          <div class="font-bold">#SoftwareEngineers</div>
+          <div class="text-sm text-gray-200">10.2k Posts</div>
+        </div>
+        <div class="item my-3 p-3 hover:bg-gray-800 cursor-pointer">
+          <div class="text-sm text-gray-200">Trending in India</div>
+          <div class="font-bold">#AI-MlFlows</div>
+          <div class="text-sm text-gray-200">400.7k Posts</div>
+        </div>
+        <div class="item my-3 p-3 hover:bg-gray-800 cursor-pointer">
+          <div class="text-sm text-gray-200">Trending in India</div>
+          <div class="font-bold">#WebDevelopers</div>
+          <div class="text-sm text-gray-200">6.2k Posts</div>
+        </div>
+      </div>
+
+      <div class="who m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-3">
+
+        <h1 class="text-xl font-bold px-3">Who To Follow</h1>
+
+
+        <div class="item my-3 p-3 space-y-4">
+          <div class="font-bold cursor-pointer">AI Driven Courses</div>
+          <div class="text-sm cursor-pointer text-gray-200">40.2k Posts</div>
+          <div class="font-bold cursor-pointer text-gray-200">Google Baba</div>
+          <div class="font-bold cursor-pointer text-gray-200">SmartInternz</div>
+          <div class="font-bold cursor-pointer text-gray-200">Github Ji</div>
+
+          <div class="text-blue-600 px-3 underline my-5">Show More</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

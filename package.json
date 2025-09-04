@@ -1,0 +1,16 @@
+{
+  "name": "tailwind-project",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run build\" \"npm run start\"",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch",
+    "start": "live-server ./dist"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
